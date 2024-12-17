@@ -13,13 +13,13 @@ export default function Intro() {
                     <img src="/glyph-logo_May2016.png" alt="LinkedIn" className="w-20 h-20" />
                 </a>
                 <a href="https://www.instagram.com/aryandotkumawat/" target="_blank" rel="noopener noreferrer">
-                    <img src="/vecteezy_instagram-logo-png-instagram-icon-transparent_18930692.png" alt="Instagram" className="w-20 h-20 " />
+                    <img src="/vecteezy_instagram-logo-png-instagram-icon-transparent_18930692.png" alt="Instagram" className="w-28 h-28"/>
                 </a>
                 <a href="mailto:aryankumawat423@gmail.com">
     <img 
-        src="/icons8-gmail-50.png" 
+        src="/icons8-gmail-logo.svg" 
         alt="Gmail" 
-        className="w-20 h-20 rounded-md" 
+        className="w-15 h-15 rounded-md justify-center" 
     />
 </a>
 
