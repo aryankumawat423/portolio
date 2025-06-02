@@ -5,24 +5,24 @@ export default function Intro() {
         <div className="relative overflow-hidden items-center justify-center h-screen text-center">
             <img src="/Avatar.svg" alt="Avatar" className="mx-auto" />
             
-            <div className="absolute top-1/2 right-4 transform -translate-y-1/2 flex flex-col gap-4">
+            {/* Social Links: right side, vertically centered, equal size and spacing */}
+            <div className="fixed top-1/2 right-8 transform -translate-y-1/2 flex flex-col items-center gap-6 z-10">
                 <a href="https://github.com/aryankumawat423" target="_blank" rel="noopener noreferrer">
-                    <img src="/github-mark-white.png" alt="GitHub" className="w-20 h-20 bg-white" />
+                    <img src="/github-mark-white.png" alt="GitHub" className="w-16 h-16 rounded-full object-contain" />
                 </a>
                 <a href="https://www.linkedin.com/in/aryan-kumawat-351877270/" target="_blank" rel="noopener noreferrer">
-                    <img src="/glyph-logo_May2016.png" alt="LinkedIn" className="w-20 h-20" />
+                    <img src="/glyph-logo_May2016.png" alt="LinkedIn" className="w-16 h-16 rounded-full object-contain" />
                 </a>
                 <a href="https://www.instagram.com/aryandotkumawat/" target="_blank" rel="noopener noreferrer">
-                    <img src="/vecteezy_instagram-logo-png-instagram-icon-transparent_18930692.png" alt="Instagram" className="w-28 h-28"/>
+                    <img src="/vecteezy_instagram-logo-png-instagram-icon-transparent_18930692.png" alt="Instagram" className="w-16 h-16 rounded-full object-contain"/>
                 </a>
                 <a href="mailto:aryankumawat423@gmail.com">
-    <img 
-        src="/icons8-gmail-logo.svg" 
-        alt="Gmail" 
-        className="w-15 h-15 rounded-md justify-center" 
-    />
-</a>
-
+                    <img 
+                        src="/icons8-gmail-logo.svg" 
+                        alt="Gmail" 
+                        className="w-16 h-16 rounded-full object-contain" 
+                    />
+                </a>
             </div>
             
             <h1 
