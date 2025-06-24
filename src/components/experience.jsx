@@ -1,25 +1,36 @@
 import React from "react";
-
 const experiences = [
-    {
-        role: "Frontend Developer Intern",
-        company: "Tech Solutions",
-        period: "Jan 2023 - Jun 2023",
-        description: "Developed responsive web interfaces using React and Tailwind CSS. Collaborated with backend team to integrate REST APIs."
-    },
-    {
-        role: "QA Automation Intern",
-        company: "QualitySoft",
-        period: "Jul 2022 - Dec 2022",
-        description: "Created automated test scripts for web applications using Selenium and Jest. Improved test coverage and reduced manual testing time."
-    },
-    {
-        role: "Open Source Contributor",
-        company: "GitHub",
-        period: "2021 - Present",
-        description: "Contributed to several open source projects, focusing on bug fixes, documentation, and feature enhancements."
-    }
+  {
+    role: "Trainee",
+    company: "Pwc India",
+    period: "Feb 2025 - Present",
+    description: [
+      "Learned core concepts of cybersecurity, including threats, cryptography, and secure network practices.",
+      "Gained hands-on experience with PowerShell, Python, Java (OOP), RDBMS, and DevOps basics."
+    ]
+  },
+  {
+    role: "Team Head",
+    company: "Team Envision Aaruush",
+    period: "September 2023 - Present",
+    description: [
+      "Full Stack Web Developer at Team Envision, leading the team, managing projects, assigning tasks, and building both frontend and backend.",
+      "Managed juniors, guided them in development tasks, and ensured project completion efficiently."
+    ]
+},
+  {
+    role: "Summer Intern",
+    company: "Adani Group",
+    period: "May 2024 - June 2024",
+    description: [
+      "Gained hands on experience in setting up networks, managing IT infrastructure, and ensuring data security.",
+      "Worked on handling employee management systems in large organizations."
+      
+    ]
+  }
 ];
+
+
 
 export default function Experience() {
     return (
@@ -34,7 +45,14 @@ export default function Experience() {
                                 <h4 className="text-2xl font-semibold mb-1">{exp.role}</h4>
                                 <div className="text-lg font-medium mb-1">{exp.company}</div>
                                 <div className="text-sm mb-2 opacity-80">{exp.period}</div>
-                                <div className="text-base">{exp.description}</div>
+                                <ul className="pl-2 text-base space-y-1">
+                                    {exp.description.map((point, i) => (
+                                        <li key={i} className="flex items-start">
+                                            <span className="mt-1 mr-2 w-2 h-2 bg-white rounded-full inline-block flex-shrink-0"></span>
+                                            <span>{point}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-[#A981FE] border-4 border-white rounded-full z-10"></div>
                         </div>

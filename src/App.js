@@ -1,8 +1,9 @@
 import './App.css';
 import Intro from './components/intro';
 import Skills from './components/skills';
-import Projects from './projects';
+import Projects from './components/projects';
 import Experience from './components/experience';
+import ExtraCurricular from './components/ExtraCurricular';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
      <Skills />
      <Experience />
      <Projects />
+     <ExtraCurricular />
     </div>
   );
 }

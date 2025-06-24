@@ -7,14 +7,14 @@ export default function Projects(){
             link: "https://yourportfolio.com"
         },
         {
-            name: "E-commerce App",
-            desc: "A full-stack e-commerce application with product listings, cart, and checkout features.",
-            link: "https://ecommerce.com"
+            name: "Aaruush Main Website",
+            desc: "Developed and optimized an event management platform, enhancing user experience for over 10,000 students. Streamlined event registrations, scheduling, and participant engagement, ensuring a seamless and interactive fest experience.",
+            link: "https://www.aaruush.org/"
         },
         {
-            name: "Blog Platform",
-            desc: "A blogging platform with markdown support and user authentication.",
-            link: "https://blogplatform.com"
+            name: "Team Envision Website",
+            desc: "Developed the official Team Envision website for Aaruush, providing a centralized platform to enhance team collaboration and outreach. The website streamlined information sharing and improved engagement,s organized and efficient event experience.",
+            link: "https://envision.aaruush.org/"
         },
         {
             name: "Task Manager",
@@ -37,11 +37,10 @@ export default function Projects(){
 
     return(
         <div>
-            <div className="flex justify-center align-center ">
-                <h3 className="text-white text-5xl font-bold mb-6 relative">Projects</h3>
-                <img src="/Frame 819.svg" alt="eiufiea" className="absolute right-64 top-0"/>                
+            <div className="flex justify-center items-center relative">
+                <h3 className="text-white text-5xl font-bold mb-6">Projects</h3>
+               
             </div>
-            {/* Project Cards: 2 rows, 3 cards each, all same size */}
             <div className="flex flex-row justify-center items-stretch gap-8 mt-8 mb-8">
                 <div className={`w-80 p-6 bg-gradient-to-r from-[#FFB6B9] to-[#6A82FB] border border-white rounded-xl shadow-lg text-left flex flex-col h-full ${cardMinHeight}`}>
                     <h4 className="text-2xl font-semibold text-white mb-2">{projects[0].name}</h4>
@@ -118,6 +117,9 @@ export default function Projects(){
                     </a>
                 </div>
             </div>
+            <div className="flex justify-center">
+                <img src="/vector 3.svg" />
+            </div>
         </div>
-    )
+    );
 }
